@@ -1,6 +1,5 @@
 package se.lexicon;
 
-import javax.lang.model.element.Name;
 import java.util.Scanner;
 
 public class ContactManagementApp {
@@ -11,35 +10,43 @@ public class ContactManagementApp {
 
     static void main(String[] args) {
 
-        displayMenu();
+
         //getting the menu choice
-        int input = scanner.nextInt();
 
-        switch (input) {
-            case 1:System.out.print("Enter name: ");
-                scanner.nextLine();
-                String name = scanner.nextLine();
+        boolean choice = true;
+        while (choice) {
+            displayMenu();
+            int input = scanner.nextInt();
+            scanner.nextLine();
 
-                System.out.print("Enter mobile: ");
-                String mobile = scanner.nextLine();
+            switch (input) {
 
-                dao.addContact(name, mobile);
-                break;
-            case 2:
-                System.out.println("Search by Name");
+                case 1:
+                    System.out.print("Enter name: ");
+                    String name = scanner.next();
+                    System.out.print("Enter mobile: ");
+                    String mobile = scanner.next();
 
-                break;
-            case 3:
-                System.out.println("Display all contacts");
-                dao.displayAllContacts();
-                break;
-            case 0:
-                System.out.println("Exit");
-                break;
-            default:
-                System.out.println("Invalid Choice");
-                break;
+                    dao.addContact(name, mobile);
+                    displayMenu();
+                    break;
+                case 2:
+                    System.out.println("Search by Name");
+                    System.out.println("Enter Name: ");
+                    dao.searchByName(scanner.next());
+                    break;
+                case 3:
+                    dao.displayAllContacts();
+                    break;
+                case 0:
+                    System.out.println("Exiting the app - GoodBye");
+                    choice =false;
+                    break;
+                default:
+                    System.out.println("Invalid Choice, Please enter 1,2,3 or 0");
 
+
+            }
         }
 
     }
@@ -50,7 +57,7 @@ public class ContactManagementApp {
             1. Add Contact
             2. Search by Name
             3. Display all Contacts
-            4. Exit
+            0. Exit
             Choose an option:
             """);
         }

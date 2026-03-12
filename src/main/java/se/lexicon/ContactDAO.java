@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ContactDAO {
     //Store Contacts using HashMap
-    HashMap<String, String> contacts = new HashMap<>();
+    private static Map<String, String> contacts = new HashMap<>();
 
     //To add contacts
     public void addContact(String name, String mobile) {
@@ -15,6 +15,7 @@ public class ContactDAO {
         } else {
             contacts.put(name, mobile);
             System.out.println("Contact added Successfully");
+
         }
     }
     //To display all contacts
