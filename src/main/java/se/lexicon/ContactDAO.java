@@ -5,12 +5,12 @@ import java.util.Map;
 
 public class ContactDAO {
     //Store Contacts using HashMap
-    private static Map<String, String> contacts = new HashMap<>();
+    private static final Map<String, String> contacts = new HashMap<>();
 
     //To add contacts
     public void addContact(String name, String mobile) {
 
-        if(contacts.containsKey(name)) {
+        if (contacts.containsKey(name)) {
             System.out.println("Contact already exists");
         } else {
             contacts.put(name, mobile);
@@ -32,7 +32,7 @@ public class ContactDAO {
             String name = entry.getKey();
             String mobile = entry.getValue();
 
-            System.out.println(index + ". " + name + " (" + mobile + ")");
+            System.out.println(index + " . " + name + " (" + mobile + ")");
             index++;
         }
     }

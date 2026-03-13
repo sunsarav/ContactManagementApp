@@ -33,3 +33,59 @@ git clone https://github.com/sunsarav/ContactManagementApp.git
 2. Open the project in preferred IDE.
 3. Buld and Run Main.java
 
+## 📸 Example Output
+
+```text
+============WELCOME TO CONTACT MANAGEMENT=============
+1. Add Contact
+2. Search by Name
+3. Display all Contacts
+0. Exit
+Choose an option: 1
+Enter name: Shamu
+Enter mobile: 0987654321
+
+**Contact added Successfully**
+
+============WELCOME TO CONTACT MANAGEMENT=============
+1. Add Contact
+2. Search by Name
+3. Display all Contacts
+0. Exit
+Choose an option: 1
+Enter name: Ragavi
+Enter mobile: 0123456789
+
+** Contact added Successfully **
+
+============WELCOME TO CONTACT MANAGEMENT=============
+1. Add Contact
+2. Search by Name
+3. Display all Contacts
+0. Exit
+Choose an option: 2
+Search by Name
+Enter Name: Shamu
+
+Shamu (0987654321)
+
+============WELCOME TO CONTACT MANAGEMENT=============
+1. Add Contact
+2. Search by Name
+3. Display all Contacts
+0. Exit
+Choose an option: 3
+
+1 . Shamu (0987654321)
+2 . Ragavi (0123456789)
+
+============WELCOME TO CONTACT MANAGEMENT=============
+1. Add Contact
+2. Search by Name
+3. Display all Contacts
+0. Exit
+Choose an option: 0
+
+Exiting the app - GoodBye
+
+

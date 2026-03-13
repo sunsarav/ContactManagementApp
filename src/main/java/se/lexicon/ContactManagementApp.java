@@ -4,23 +4,21 @@ import java.util.Scanner;
 
 public class ContactManagementApp {
 
-    //Initializing scanner to get input
+        //Initializing scanner to get input
     static Scanner scanner = new Scanner(System.in);
     static ContactDAO dao = new ContactDAO();
 
-    static void main(String[] args) {
-
+    static void main() {
 
         //getting the menu choice
-
         boolean choice = true;
         while (choice) {
+
             displayMenu();
             int input = scanner.nextInt();
             scanner.nextLine();
 
             switch (input) {
-
                 case 1:
                     System.out.print("Enter name: ");
                     String name = scanner.next();
@@ -28,7 +26,6 @@ public class ContactManagementApp {
                     String mobile = scanner.next();
 
                     dao.addContact(name, mobile);
-                    displayMenu();
                     break;
                 case 2:
                     System.out.println("Search by Name");
@@ -44,8 +41,6 @@ public class ContactManagementApp {
                     break;
                 default:
                     System.out.println("Invalid Choice, Please enter 1,2,3 or 0");
-
-
             }
         }
 
