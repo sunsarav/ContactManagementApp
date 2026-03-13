@@ -6,31 +6,23 @@ This project was built to practice core Java programming concepts, including arr
 
 ## Features
 
- Add new contacts
+* Add new contacts
 
- View all saved contacts
+* View all saved contacts
 
- Search contacts by name
+* Search contacts by name, mobile number
 
- Delete contacts
+* Delete contacts
 
- Simple interactive console menu
+* Simple interactive console menu
 
 ## Tech Stack
 
-Java	
-HashMap - collections
-Scanner	
-Git & GitHub
+* Java
 
-## Project Structure
+* HashMap
 
-ContactManagementApp
-│
-├── Contact.java          # Contact data model
-├── ContactManager.java   # Contact management logic
-├── Main.java             # Application entry point
-└── README.md
+* Scanner
 
 ## How to Run the Project
 
