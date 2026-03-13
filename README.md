@@ -45,7 +45,7 @@ Choose an option: 1
 Enter name: Shamu
 Enter mobile: 0987654321
 
-**Contact added Successfully**
+Contact added Successfully
 
 ============WELCOME TO CONTACT MANAGEMENT=============
 1. Add Contact
@@ -56,7 +56,7 @@ Choose an option: 1
 Enter name: Ragavi
 Enter mobile: 0123456789
 
-** Contact added Successfully **
+ Contact added Successfully 
 
 ============WELCOME TO CONTACT MANAGEMENT=============
 1. Add Contact
